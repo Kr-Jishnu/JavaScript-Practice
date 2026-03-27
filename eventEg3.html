@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text">
+    <img src="./Windows-XP-4K-modified-scaled.jpg" alt="" width="100px" height="100px"  onmouseover="f1()"  onmouseout="f2()">
+    <hr>
+    <h1></h1>
+    <script>
+function f1(){
+    let x=document.querySelector("input").value
+    let y=document.querySelector("h1")
+    y.innerHTML=x
+
+}
+
+function f2(){
+    let y=document.querySelector("h1")
+    y.innerHTML=""
+
+}
+
+
+    </script>
+    
+</body>
+</html>

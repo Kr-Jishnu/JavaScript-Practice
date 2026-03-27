@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" min="0" max="10" oninput="f1()" placeholder="enter the password">
+    <hr>
+    <h1></h1>
+    <script>
+        function f1(){
+            let x=document.querySelector("input").value.length
+            console.log(x);
+            let y=document.querySelector("h1")
+            if(x>=1 && x<=3){
+                y.innerHTML=`weak password`
+                y.style.color= `red` 
+            }
+           else if(x>3 && x<6){
+                y.innerHTML=`medium password`
+                y.style.color= `orange` 
+            }
+            else if(x>6){
+                y.innerHTML=`good password`
+                y.style.color= `green` 
+            }
+            else if(x==0){
+                y.innerHTML=""
+            }
+
+
+    }
+    </script>
+    
+</body>
+</html>

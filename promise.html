@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1></h1>
+    <script>
+let a=fetch("https://fakestoreapi.com/products");
+console.log(a); //promise
+let b=a.then((data)=> {
+    console.log(data)
+    return data.json();
+});
+console.log(b); //promise
+b.then((c) => {
+
+console.log(c); //[{}.()......]
+c.map((data) => {
+console.log(data); //{}
+document.querySelector("h1").innerHTML +=`id:${data.id}
+<br>
+${data.title}
+<img src=${data.image}>wz
+<hr>`
+});
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" min="20" max="800" oninput="f1()" value="100" id="a">
+    <input type="range" min="20" max="800" oninput="f1()" value="100" id="b">
+<br>
+   <label for="">width</label>
+   <label for="">height</label>
+   <br>
+
+    <img src="./Windows-XP-4K-modified-scaled.jpg" alt="">
+    <script>
+        function f1(){
+            let x=document.querySelector("#a").value
+            let y=document.querySelector("#b").value
+            console.log(x);
+            let z=document.querySelector("img")
+            z.style.cssText=`width:${x}px;height:${y}px`
+        }
+       
+       
+     </script>
+</body>
+</html>

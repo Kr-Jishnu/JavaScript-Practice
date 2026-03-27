@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">RGB</button>
+    <hr>
+    <h1>rgb(255,255,255)</h1>
+
+    <script>
+        function f1(){
+            
+            let y=document.querySelector("body")
+            let z=document.querySelector("h1")
+
+            // let a=Math.trunc(Math.random()*256)
+            // let b=Math.trunc(Math.random()*256)
+            // let c=Math.trunc(Math.random()*256)
+            // y.style.backgroundColo= `rgb(${a},${b},${c})`
+            // z.innerHTML=`rgb(${a},${b},${c})`
+
+            let color=`rgb(${Math.trunc(Math.random()*256)},${Math.trunc(Math.random()*256)},${Math.trunc(Math.random()*256)})`
+            y.style.backgroundColor=color
+            z.innerHTML=color
+        }
+    </script>
+    
+</body>
+</html>

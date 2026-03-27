@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">red</button>
+
+    <script>
+        function f1(){
+            let y=document.querySelector("button")
+            let color=y.innerHTML
+            let x=document.querySelector("body")
+           x.style.backgroundColor=color
+           if(color=="red"){
+            y.innerText="green"
+           }
+           else{
+            y.innerText="red"
+           }
+        }
+    </script>
+    
+</body>
+</html>
